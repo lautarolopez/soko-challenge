@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  challenge-app:
+    container_name: challenge-soko
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+
+  mongo:
+    container_name: mongo-soko
+    image: mongo:7.0.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+
+volumes:
+  mongo-data:

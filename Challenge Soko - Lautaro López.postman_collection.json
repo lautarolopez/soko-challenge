@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "cacaa9e3-fe3b-48c0-8b61-7847dbd8f0e4",
+		"name": "Challenge Soko - Lautaro López",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10048690"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DEVELOPMENT_URL}}/api/users",
+					"host": [
+						"{{DEVELOPMENT_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"some@email.there\",\r\n    \"password\": \"SomePasswordHere\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{DEVELOPMENT_URL}}/api/users",
+					"host": [
+						"{{DEVELOPMENT_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DEVELOPMENT_URL}}/api/users/:id",
+					"host": [
+						"{{DEVELOPMENT_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "657a48ad9f15f1c10b4a75b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"password\": \"SomeNewPassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{DEVELOPMENT_URL}}/api/users/:id",
+					"host": [
+						"{{DEVELOPMENT_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "657a54e3c07653bf031ed324"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{DEVELOPMENT_URL}}/api/users/:id",
+					"host": [
+						"{{DEVELOPMENT_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "657a54e3c07653bf031ed324"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
