@@ -69,3 +69,7 @@ This starts the project in "production" mode, with a fresh database.
 ### Postman Collection
 
 The repository also contains a Postman Collection to test the endpoints. It uses a global environment varialbe **DEVELOPMENT_URL** that can be setted up in Postman. Otherwise, just replace it with http://localhost:3000.
+
+### Documentation
+
+This API has a Swagger documentation aviable on **/api-docs** once the project is running.
